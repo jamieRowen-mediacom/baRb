@@ -9,7 +9,7 @@ Functions for working with BARB's TV spot API
 ### Installation
 
 ```
-remotes::install::github("neilc-itv/baRb")
+remotes::install_github("ITV/baRb")
 ```
 
 ### Getting started
