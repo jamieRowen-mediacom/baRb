@@ -48,6 +48,6 @@ describe("check response", {
     expect_true(check_response(list(status_code = 200)))
   })
   it("returns FALSE with any other status code", {
-    expect_false(check_response(list(status_code = 401)))
+    expect_false(check_response(list(status_code = 401), verbose = FALSE))
   })
 })

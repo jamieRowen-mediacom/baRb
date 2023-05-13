@@ -8,3 +8,10 @@ set_env_var = function(value, name) {
   names(setter) = name
   do.call(Sys.setenv, setter)
 }
+
+with_class = function(x, cls) {
+  if (!inherits(x, cls)) {
+    class(x) = c(cls, class(x))
+  }
+  x
+}
