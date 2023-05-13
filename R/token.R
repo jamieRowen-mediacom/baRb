@@ -53,7 +53,7 @@ set_token = function(token) {
 get_token = function(token = NA_character_) {
   if (!is.na(token)) return (token)
   token = Sys.getenv(.barb_token_env_var, token)
-  if (is.na(token)) stop("No barb api token found.")
+  if (is.null(token) || is.na(token)) stop("No barb api token found.")
   token
 }
 
@@ -77,6 +77,9 @@ barb_get_access_token = function(
     body = jsonlite::toJSON(list(email = username, password = password),auto_unbox = TRUE),
     httr::content_type_json()
   )
+  if (!check_response(res)) {
+    return (NULL)
+  }
   token = httr::content(res, as = "parsed")$access
   cli::cli_alert_info(
     "Set the token for this R session with {.code baRb::set_token(\"{token}\")}
@@ -85,4 +88,18 @@ barb_get_access_token = function(
     "
   )
   token
+}
+
+check_response = function(response) {
+  success = response$status_code == 200
+  if (!success) {
+    cli::cli_alert_danger(
+      "
+      Failed to get a response with
+      status code: {response$status_code}
+      details: {httr::content(res)}
+      "
+    )
+  }
+  success
 }
