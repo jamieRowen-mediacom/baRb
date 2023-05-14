@@ -19,7 +19,8 @@ Imports:
     tidyjson,
     janitor,
     stringr,
-    cli
+    cli,
+    pkgconfig
 RoxygenNote: 7.2.3
 Suggests: 
     mockery,
