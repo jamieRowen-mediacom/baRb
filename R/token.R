@@ -90,14 +90,14 @@ barb_get_access_token = function(
   token
 }
 
-check_response = function(response) {
+check_response = function(response, verbose = TRUE) {
   success = response$status_code == 200
-  if (!success) {
+  if (!success && verbose) {
     cli::cli_alert_danger(
       "
       Failed to get a response with
       status code: {response$status_code}
-      details: {httr::content(res)}
+      details: {httr::content(response)}
       "
     )
   }
