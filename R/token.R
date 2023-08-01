@@ -5,6 +5,8 @@
 .barb_password_env_var = "BARB_API_PASSWORD"
 
 .root = "https://barb-api.co.uk/api/v1"
+.async_root = "https://barb-api.co.uk/api/v1/async-batch"
+
 .token = glue::glue("{.root}/auth/token/")
 
 #' Set the user environment variable
