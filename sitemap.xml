@@ -13,10 +13,22 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/barb.html</loc>
+  </url>
+  <url>
     <loc>/reference/barb_add_female_audiences.html</loc>
   </url>
   <url>
+    <loc>/reference/barb_auth_header.html</loc>
+  </url>
+  <url>
+    <loc>/reference/barb_get_access_token.html</loc>
+  </url>
+  <url>
     <loc>/reference/barb_get_advertisers.html</loc>
+  </url>
+  <url>
+    <loc>/reference/barb_get_next.html</loc>
   </url>
   <url>
     <loc>/reference/barb_get_panels.html</loc>
@@ -31,15 +43,39 @@
     <loc>/reference/barb_get_stations.html</loc>
   </url>
   <url>
+    <loc>/reference/barb_has_next.html</loc>
+  </url>
+  <url>
+    <loc>/reference/barb_next.html</loc>
+  </url>
+  <url>
     <loc>/reference/barb_query_api.html</loc>
   </url>
   <url>
     <loc>/reference/barb_rollup_spots.html</loc>
   </url>
   <url>
+    <loc>/reference/get_token.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
     <loc>/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>/reference/reexports.html</loc>
+  </url>
+  <url>
+    <loc>/reference/set_env_var.html</loc>
+  </url>
+  <url>
+    <loc>/reference/set_password.html</loc>
+  </url>
+  <url>
+    <loc>/reference/set_token.html</loc>
+  </url>
+  <url>
+    <loc>/reference/set_user.html</loc>
   </url>
 </urlset>
