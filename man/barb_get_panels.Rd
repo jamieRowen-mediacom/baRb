@@ -12,6 +12,9 @@ representation of the raw json response}
 
 \item{token}{character(1) barb API token. if NA try to find the session default token}
 }
+\value{
+if as_tibble, a tibble, otherwise list representation of raw json
+}
 \description{
 Returns a complete list of panel codes and panel names.
 This is useful for finding the correct panel code when using panel
@@ -19,6 +22,6 @@ code as a query parameter for other endpoints.
 }
 \examples{
 \dontrun{
-  barb_get_panels()
+  meta_panels()
 }
 }

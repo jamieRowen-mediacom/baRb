@@ -2,3 +2,41 @@ url: ~
 template:
   bootstrap: 5
 
+reference:
+  - title: General purpose
+    desc: General workhorse functions for calling endpoints
+    contents:
+      - barb
+  - title: Meta data endpoints
+    desc: Functions that expose the data from meta data endpoints
+    contents:
+      - meta_panels
+      - meta_stations
+      - meta_advertisers
+      - meta_buyers
+      - meta_households
+      - meta_panel_members
+      - meta_target_audience_members
+      - meta_viewing_stations
+      - meta_spot_schedule
+      - meta_programme_schedule
+      - meta_programme_content_details
+      - meta_transmission_log_programme_details
+  - title: Authentication flow
+    desc: Setting up token authentication
+    contents:
+      - set_user
+      - set_password
+      - set_token
+  - title: Legacy
+    desc: Functions created by original author
+    contents:
+      - barb_add_female_audiences
+      - barb_get_access_token
+      - barb_get_advertisers
+      - barb_get_panels
+      - barb_get_programmes
+      - barb_get_spots
+      - barb_get_stations
+      - barb_query_api
+      - barb_rollup_spots

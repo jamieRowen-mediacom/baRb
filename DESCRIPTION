@@ -1,7 +1,7 @@
 Package: baRb
 Type: Package
 Title: Interface to BARB's Spot API
-Version: 0.2.0
+Version: 0.3.0
 Author: Neil Charles
 Maintainer: Neil Charles <neil.charles@itv.com>
 Description: Interface to BARB's API
@@ -27,9 +27,11 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Collate: 
+    'advertising.R'
     'audiences.R'
     'barb.R'
     'rexport-tibble.R'
+    'utils.R'
     'meta.R'
     'metadata.R'
     'programmes.R'
@@ -37,4 +39,3 @@ Collate:
     'token.R'
     'urls.R'
     'utils-pipe.R'
-    'utils.R'
