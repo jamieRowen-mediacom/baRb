@@ -27,7 +27,7 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Collate: 
-    'advertising.R'
+    'async.R'
     'audiences.R'
     'barb.R'
     'rexport-tibble.R'

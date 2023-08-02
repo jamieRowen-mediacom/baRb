@@ -7,6 +7,7 @@ reference:
     desc: General workhorse functions for calling endpoints
     contents:
       - barb
+      - async_barb
   - title: Meta data endpoints
     desc: Functions that expose the data from meta data endpoints
     contents:
@@ -22,6 +23,12 @@ reference:
       - meta_programme_schedule
       - meta_programme_content_details
       - meta_transmission_log_programme_details
+  - title: Async endpoints
+    desc: Functions related to calling the async API
+    contents:
+      - async_barb
+      - async_sitrep
+      - async_barb_result
   - title: Authentication flow
     desc: Setting up token authentication
     contents:
