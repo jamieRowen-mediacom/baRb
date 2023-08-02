@@ -11,7 +11,7 @@ describe("barb_get_panels", {
   it("successfully adds the class to the returned object", {
     mockery::stub(barb_get_panels, "barb", panel_example)
     res = barb_get_panels(as_tibble = FALSE)
-    expect_s3_class(res, "barb_panels")
+    expect_s3_class(res, "barb_meta_panels")
   })
   it("successfully returns a tibble if asked", {
     mockery::stub(barb_get_panels, "barb", panel_example)

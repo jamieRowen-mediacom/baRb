@@ -1,5 +1,6 @@
 # baRb (development version)
 
+* ci: R CMD check standard
 * feat: Added some utilities for making requests against the async endnpoints
     * `async_barb()` - initiate a post request for async endpoint
     * `async_barb_result()` - get result of async request, or status if not finished
