@@ -2,8 +2,10 @@ Package: baRb
 Type: Package
 Title: Interface to BARB's Spot API
 Version: 0.3.0.9000
-Author: Neil Charles
-Maintainer: Neil Charles <neil.charles@itv.com>
+Authors@R: c(
+      person("Neil", "Charles", , "neil.charles@itv.com", role = c("aut", "cre")),
+      person("Jamie", "Owen", , "jamie.owen@essencemediacom.com", role = c("aut"))
+    )
 Description: Interface to BARB's API
 License: Apache 2
 Encoding: UTF-8
