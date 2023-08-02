@@ -1,26 +1,6 @@
 async_collector = new.env()
 async_collector$job_id = c()
 
-ensure_trailing_slash = function(x) {
-  if (!stringr::str_detect(x, "/$")) {
-    x = glue::glue("{x}/")
-  }
-  x
-}
-
-ensure_leading_slash = function(x) {
-  if (!stringr::str_detect(x, "^/")) {
-    x = glue::glue("/{x}")
-  }
-  x
-}
-
-ensure_slashes = function(x) {
-  x %>%
-    ensure_leading_slash() %>%
-    ensure_trailing_slash()
-}
-
 async_results_url = function(job_id) {
   glue::glue("{.async_root}/results/{job_id}")
 }
