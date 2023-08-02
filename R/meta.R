@@ -1,3 +1,40 @@
+ensure_no_slash = function(x) {
+  x %>%
+    stringr::str_remove("^/") %>%
+    stringr::str_remove("/$")
+}
+
+meta_class_name_ = function(x) {
+  x = ensure_no_slash(x)
+  glue::glue("barb_meta_{x}")
+}
+
+meta_gen_ = function(path, ..., class = meta_class_name_(path)) {
+  force(class)
+  path = ensure_slashes(path)
+  return(function(..., as_tibble = TRUE, token = NA_character_) {
+    res = barb(path, ..., token = token) %>%
+      with_class(class)
+    if (as_tibble) {
+      res = as_tibble(res)
+    }
+    res
+  })
+}
+
+meta_panels = meta_gen_("panels")
+meta_stations = meta_gen_("stations")
+meta_advertisers = meta_gen_("advertisers")
+meta_buyers = meta_gen_("buyers")
+meta_households = meta_gen_("households")
+meta_panel_members = meta_gen_("panel_members")
+meta_target_audience_members = meta_gen_("target_audience_members")
+meta_viewing_stations = meta_gen_("viewing_stations")
+meta_spot_schedule = meta_gen_("spot_schedule")
+meta_programme_schedule = meta_gen_("programme_schedule")
+meta_programme_content_details = meta_gen_("programme_content_details")
+meta_transmission_log_programme_details = meta_gen_("transmission_log_programme_details")
+
 #' Get the list of panels
 #'
 #' Returns a complete list of panel codes and panel names.
