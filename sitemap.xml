@@ -16,6 +16,15 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
+    <loc>/reference/async_barb.html</loc>
+  </url>
+  <url>
+    <loc>/reference/async_barb_result.html</loc>
+  </url>
+  <url>
+    <loc>/reference/async_sitrep.html</loc>
+  </url>
+  <url>
     <loc>/reference/barb.html</loc>
   </url>
   <url>

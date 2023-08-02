@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">baRb</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,18 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="development version" id="barb-development-version">baRb (development version)<a class="anchor" aria-label="anchor" href="#barb-development-version"></a></h2>
+<ul><li>ci: R CMD check standard</li>
+<li>feat: Added some utilities for making requests against the async endnpoints
+<ul><li>
+<code><a href="../reference/async_barb.html">async_barb()</a></code> - initiate a post request for async endpoint</li>
+<li>
+<code><a href="../reference/async_barb_result.html">async_barb_result()</a></code> - get result of async request, or status if not finished</li>
+<li>
+<code><a href="../reference/async_sitrep.html">async_sitrep()</a></code> - check on the status of all async requests initiated in the current R session</li>
+</ul></li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.3.0" id="barb-030">baRb 0.3.0<a class="anchor" aria-label="anchor" href="#barb-030"></a></h2>
 <ul><li>docs: Section out the reference section of the pkgdown site</li>
 <li>feat: Added a collection of functions for all meta data endpoints
@@ -57,7 +69,8 @@
 </ul></li>
 <li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
 </ul></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
