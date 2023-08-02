@@ -18,6 +18,7 @@ API results json
 Submit a query to the BARB API (usually not called directly)
 }
 \examples{
+\dontrun{
 # Example only. You'd use barb_get_spots() for this instead.
 raw_json <- barb_query_api(
   "https://dev.barb-api.co.uk/api/v1/advertising_spots",
@@ -26,4 +27,5 @@ raw_json <- barb_query_api(
     max_transmission_date = "2022-12-31",
     advertiser_name = "PLAYMOBIL UK")
 )
+}
 }

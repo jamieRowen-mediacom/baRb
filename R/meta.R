@@ -183,7 +183,9 @@ as_tibble.barb_meta_panels = function(
 #' @export
 #'
 #' @examples
-#' barb_get_stations()
+#' \dontrun{
+#'  barb_get_stations()
+#' }
 barb_get_stations <- function(){
 
   api_result <- barb_query_api(

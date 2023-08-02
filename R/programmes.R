@@ -9,9 +9,6 @@
 #'
 #' @return A tibble of TV spots
 #' @export
-#'
-#' @examples
-#'
 barb_get_programmes <- function(min_transmission_date = NULL,
                            max_transmission_date = NULL,
                            station_code = "",
