@@ -13,5 +13,7 @@ A character vector of advertiser names
 Get the list of available advertiser names
 }
 \examples{
-barb_get_advertisers()
+\dontrun{
+   barb_get_advertisers()
+}
 }

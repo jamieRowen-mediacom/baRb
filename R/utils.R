@@ -15,3 +15,29 @@ with_class = function(x, cls) {
   }
   x
 }
+
+ensure_trailing_slash = function(x) {
+  if (!stringr::str_detect(x, "/$")) {
+    x = glue::glue("{x}/")
+  }
+  x
+}
+
+ensure_leading_slash = function(x) {
+  if (!stringr::str_detect(x, "^/")) {
+    x = glue::glue("/{x}")
+  }
+  x
+}
+
+ensure_slashes = function(x) {
+  x %>%
+    ensure_leading_slash() %>%
+    ensure_trailing_slash()
+}
+
+ensure_no_slash = function(x) {
+  x %>%
+    stringr::str_remove("^/") %>%
+    stringr::str_remove("/$")
+}
