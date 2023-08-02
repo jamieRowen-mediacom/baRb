@@ -4,7 +4,9 @@
 #' @export
 #'
 #' @examples
-#' barb_get_advertisers()
+#' \dontrun{
+#'    barb_get_advertisers()
+#' }
 barb_get_advertisers <- function(){
 
   raw_json <- barb_query_api(

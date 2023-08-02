@@ -27,6 +27,7 @@ meta_gen_ = function(path, ..., class = meta_class_name_(path)) {
 #'
 #' @param as_tibble if TRUE cast result as a tibble object, otherwise list
 #'   representation of the raw json response
+#' @family meta data endpoints
 #' @inheritParams barb
 #' @export
 #' @examples \dontrun{
@@ -42,6 +43,7 @@ meta_panels = meta_gen_("panels")
 #' programme_ratings, spot_schedule, programme_schedule endpoints.
 #'
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_stations = meta_gen_("stations")
@@ -51,6 +53,7 @@ meta_stations = meta_gen_("stations")
 #' Returns a complete list of advertiser names
 #' 
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_advertisers = meta_gen_("advertisers")
@@ -60,6 +63,7 @@ meta_advertisers = meta_gen_("advertisers")
 #' Returns a complete list of buyer names.
 #' 
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_buyers = meta_gen_("buyers")
@@ -70,6 +74,7 @@ meta_buyers = meta_gen_("buyers")
 #' household data and a list of the devices present in the household.
 #' 
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_households = meta_gen_("households")
@@ -79,6 +84,7 @@ meta_households = meta_gen_("households")
 #' Returns details for a set of panel members.
 #' 
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_panel_members = meta_gen_("panel_members")
@@ -88,6 +94,7 @@ meta_panel_members = meta_gen_("panel_members")
 #' Returns the list of target audience categories by selected period and panel.
 #' 
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_target_audience_members = meta_gen_("target_audience_members")
@@ -97,6 +104,7 @@ meta_target_audience_members = meta_gen_("target_audience_members")
 #' Information about the viewing stations codes is used as a query parameter
 #' in the viewing, programme_audience endpoints.
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_viewing_stations = meta_gen_("viewing_stations")
@@ -105,6 +113,7 @@ meta_viewing_stations = meta_gen_("viewing_stations")
 #' 
 #' Get all the spots scheduled by each station.
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_spot_schedule = meta_gen_("spot_schedule")
@@ -113,18 +122,21 @@ meta_spot_schedule = meta_gen_("spot_schedule")
 #' 
 #' Get all the programmes scheduled by each station.
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_programme_schedule = meta_gen_("programme_schedule")
 
 #' Get the list of programme content details
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_programme_content_details = meta_gen_("programme_content_details")
 
 #' Get the list of transmission log programme details
 #' @inheritParams meta_panels
+#' @family meta data endpoints
 #' @export
 #' @return if as_tibble, a tibble, otherwise list representation of raw json
 meta_transmission_log_programme_details = meta_gen_("transmission_log_programme_details")

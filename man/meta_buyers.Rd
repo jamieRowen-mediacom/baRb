@@ -20,3 +20,18 @@ if as_tibble, a tibble, otherwise list representation of raw json
 \description{
 Returns a complete list of buyer names.
 }
+\seealso{
+Other meta data endpoints: 
+\code{\link{meta_advertisers}()},
+\code{\link{meta_households}()},
+\code{\link{meta_panel_members}()},
+\code{\link{meta_panels}()},
+\code{\link{meta_programme_content_details}()},
+\code{\link{meta_programme_schedule}()},
+\code{\link{meta_spot_schedule}()},
+\code{\link{meta_stations}()},
+\code{\link{meta_target_audience_members}()},
+\code{\link{meta_transmission_log_programme_details}()},
+\code{\link{meta_viewing_stations}()}
+}
+\concept{meta data endpoints}

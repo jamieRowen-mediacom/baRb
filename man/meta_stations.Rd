@@ -22,3 +22,18 @@ Informations about the stations codes is used as a
 query parameter in the advertising spots, audiences_by_time, 
 programme_ratings, spot_schedule, programme_schedule endpoints.
 }
+\seealso{
+Other meta data endpoints: 
+\code{\link{meta_advertisers}()},
+\code{\link{meta_buyers}()},
+\code{\link{meta_households}()},
+\code{\link{meta_panel_members}()},
+\code{\link{meta_panels}()},
+\code{\link{meta_programme_content_details}()},
+\code{\link{meta_programme_schedule}()},
+\code{\link{meta_spot_schedule}()},
+\code{\link{meta_target_audience_members}()},
+\code{\link{meta_transmission_log_programme_details}()},
+\code{\link{meta_viewing_stations}()}
+}
+\concept{meta data endpoints}
