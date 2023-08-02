@@ -13,6 +13,9 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/news/index.html</loc>
+  </url>
+  <url>
     <loc>/reference/barb.html</loc>
   </url>
   <url>
@@ -59,6 +62,42 @@
   </url>
   <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_advertisers.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_buyers.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_households.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_panel_members.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_panels.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_programme_content_details.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_programme_schedule.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_spot_schedule.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_stations.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_target_audience_members.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_transmission_log_programme_details.html</loc>
+  </url>
+  <url>
+    <loc>/reference/meta_viewing_stations.html</loc>
   </url>
   <url>
     <loc>/reference/pipe.html</loc>

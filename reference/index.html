@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">baRb</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,9 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
@@ -35,9 +38,9 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="general-purpose">General purpose<a class="anchor" aria-label="anchor" href="#general-purpose"></a></h2>
       
-      
+      <p class="section-desc"></p><p>General workhorse functions for calling endpoints</p>
 
       
     </div><div id="" class="section level2">
@@ -50,7 +53,115 @@
           <code><a href="barb.html">barb()</a></code> 
         </dt>
         <dd>Make a request to the barb API</dd>
+      </dl></div><div class="section level2">
+      <h2 id="meta-data-endpoints">Meta data endpoints<a class="anchor" aria-label="anchor" href="#meta-data-endpoints"></a></h2>
+      
+      <p class="section-desc"></p><p>Functions that expose the data from meta data endpoints</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="meta_panels.html">meta_panels()</a></code> 
+        </dt>
+        <dd>Get the list of panels</dd>
       </dl><dl><dt>
+          
+          <code><a href="meta_stations.html">meta_stations()</a></code> 
+        </dt>
+        <dd>Get the list of stations</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_advertisers.html">meta_advertisers()</a></code> 
+        </dt>
+        <dd>Get the list of advertisers</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_buyers.html">meta_buyers()</a></code> 
+        </dt>
+        <dd>Get the list of buyers</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_households.html">meta_households()</a></code> 
+        </dt>
+        <dd>Get the list of panel households</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_panel_members.html">meta_panel_members()</a></code> 
+        </dt>
+        <dd>Get the list of panel members</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_target_audience_members.html">meta_target_audience_members()</a></code> 
+        </dt>
+        <dd>Get the list of target audience categories</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_viewing_stations.html">meta_viewing_stations()</a></code> 
+        </dt>
+        <dd>Get the list of viewing stations</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_spot_schedule.html">meta_spot_schedule()</a></code> 
+        </dt>
+        <dd>Get the spots scheduled</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_programme_schedule.html">meta_programme_schedule()</a></code> 
+        </dt>
+        <dd>Get the programmes scheduled</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_programme_content_details.html">meta_programme_content_details()</a></code> 
+        </dt>
+        <dd>Get the list of programme content details</dd>
+      </dl><dl><dt>
+          
+          <code><a href="meta_transmission_log_programme_details.html">meta_transmission_log_programme_details()</a></code> 
+        </dt>
+        <dd>Get the list of transmission log programme details</dd>
+      </dl></div><div class="section level2">
+      <h2 id="authentication-flow">Authentication flow<a class="anchor" aria-label="anchor" href="#authentication-flow"></a></h2>
+      
+      <p class="section-desc"></p><p>Setting up token authentication</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="set_user.html">set_user()</a></code> 
+        </dt>
+        <dd>Set the user environment variable</dd>
+      </dl><dl><dt>
+          
+          <code><a href="set_password.html">set_password()</a></code> 
+        </dt>
+        <dd>Set the password environment variable</dd>
+      </dl><dl><dt>
+          
+          <code><a href="set_token.html">set_token()</a></code> 
+        </dt>
+        <dd>Set the default token</dd>
+      </dl></div><div class="section level2">
+      <h2 id="legacy">Legacy<a class="anchor" aria-label="anchor" href="#legacy"></a></h2>
+      
+      <p class="section-desc"></p><p>Functions created by original author</p>
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
           
           <code><a href="barb_add_female_audiences.html">barb_add_female_audiences()</a></code> 
         </dt>
@@ -95,23 +206,9 @@
           <code><a href="barb_rollup_spots.html">barb_rollup_spots()</a></code> 
         </dt>
         <dd>Roll up raw spot data by broadcast time for spot to web modelling</dd>
-      </dl><dl><dt>
-          
-          <code><a href="set_password.html">set_password()</a></code> 
-        </dt>
-        <dd>Set the password environment variable</dd>
-      </dl><dl><dt>
-          
-          <code><a href="set_token.html">set_token()</a></code> 
-        </dt>
-        <dd>Set the default token</dd>
-      </dl><dl><dt>
-          
-          <code><a href="set_user.html">set_user()</a></code> 
-        </dt>
-        <dd>Set the user environment variable</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
