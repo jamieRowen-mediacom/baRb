@@ -27,9 +27,11 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Collate: 
+    'advertising.R'
     'audiences.R'
     'barb.R'
     'rexport-tibble.R'
+    'utils.R'
     'meta.R'
     'metadata.R'
     'programmes.R'
@@ -37,4 +39,3 @@ Collate:
     'token.R'
     'urls.R'
     'utils-pipe.R'
-    'utils.R'
