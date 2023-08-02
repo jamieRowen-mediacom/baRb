@@ -13,5 +13,7 @@ A tibble of available stations
 Get a tibble of station names
 }
 \examples{
-barb_get_stations()
+\dontrun{
+ barb_get_stations()
+}
 }

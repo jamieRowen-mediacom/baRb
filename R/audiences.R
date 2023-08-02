@@ -4,8 +4,6 @@
 #'
 #' @return
 #' @export
-#'
-#' @examples
 barb_add_female_audiences <- function(impacts){
   impacts %>%
     dplyr::mutate(all_women = all_adults - all_men,

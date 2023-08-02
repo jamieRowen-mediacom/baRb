@@ -12,7 +12,9 @@
 #' @export
 #'
 #' @examples
-#' barb_get_spots(min_transmission_date = "2023-01-01", max_transmission_date = "2023-01-31", advertiser_name = "hays_travel")
+#' \dontrun{
+#'  barb_get_spots(min_transmission_date = "2023-01-01", max_transmission_date = "2023-01-31", advertiser_name = "hays_travel")
+#' }
 barb_get_spots <- function(min_transmission_date = NULL,
                            max_transmission_date = NULL,
                            advertiser_name = NULL,
@@ -152,8 +154,6 @@ process_spot_json <- function(spot_json){
 #'
 #' @return A tibble of rolled up spots
 #' @export
-#'
-#' @examples
 barb_rollup_spots <- function(spots, plus_one = TRUE, hd = TRUE){
   spots_rollup <- spots %>%
     dplyr::mutate(date = as.Date(standard_datetime)) %>%

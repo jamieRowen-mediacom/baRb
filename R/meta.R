@@ -160,10 +160,10 @@ barb_get_panels = function(as_tibble = TRUE, token = NA_character_) {
   meta_panels(as_tibble = as_tibble, token = token)
 }
 
-#' @exportS3Method as_tibble barb_panels
+#' @exportS3Method as_tibble barb_meta_panels
 #' @rdname as_tibble
 #' @export
-as_tibble.barb_panels = function(
+as_tibble.barb_meta_panels = function(
     x, ..., .rows = NULL,
     .name_repair = c("check_unique", "unique", "universal", "minimal"),
     rownames = pkgconfig::get_config("tibble::rownames", NULL)
@@ -183,7 +183,9 @@ as_tibble.barb_panels = function(
 #' @export
 #'
 #' @examples
-#' barb_get_stations()
+#' \dontrun{
+#'  barb_get_stations()
+#' }
 barb_get_stations <- function(){
 
   api_result <- barb_query_api(

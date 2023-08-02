@@ -1,7 +1,7 @@
 Package: baRb
 Type: Package
 Title: Interface to BARB's Spot API
-Version: 0.3.0
+Version: 0.3.0.9000
 Author: Neil Charles
 Maintainer: Neil Charles <neil.charles@itv.com>
 Description: Interface to BARB's API
@@ -20,13 +20,16 @@ Imports:
     janitor,
     stringr,
     cli,
-    pkgconfig
+    pkgconfig,
+    purrr
 RoxygenNote: 7.2.3
 Suggests: 
     mockery,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 Config/testthat/edition: 3
 Collate: 
+    'async.R'
     'audiences.R'
     'barb.R'
     'rexport-tibble.R'

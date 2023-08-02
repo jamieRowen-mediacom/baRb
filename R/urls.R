@@ -51,6 +51,7 @@ barb_login <- function(username = NULL, password = NULL) {
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' # Example only. You'd use barb_get_spots() for this instead.
 #' raw_json <- barb_query_api(
 #'   "https://dev.barb-api.co.uk/api/v1/advertising_spots",
@@ -59,6 +60,7 @@ barb_login <- function(username = NULL, password = NULL) {
 #'     max_transmission_date = "2022-12-31",
 #'     advertiser_name = "PLAYMOBIL UK")
 #' )
+#' }
 barb_query_api <- function(url, query = list()){
 
   token = barb_login()
